@@ -1,13 +1,15 @@
 import discord, os, pytube
 from config import *
 
+token = token
+guildid = guildid
 client = discord.Bot(intents=discord.Intents.all())
 
 @client.event
 async def on_ready():
     print(f" > Logged in as: {client.user.name}#{client.user.discriminator}")
 
-@client.slash_command(name="download")
+@client.slash_command(name="download", guild_ids=guildid)
 async def download(ctx, link):
     embed = discord.Embed(title="Downloading Video", description=f"```{link}```", color=0x660cf)
     await ctx.respond(embed=embed)
