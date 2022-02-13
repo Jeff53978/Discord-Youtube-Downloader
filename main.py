@@ -7,7 +7,7 @@ client = discord.Bot(intents=discord.Intents.all())
 async def on_ready():
     print(f" > Logged in as: {client.user.name}#{client.user.discriminator}")
 
-@client.slash_command(name="download", guild_ids=guildid)
+@client.slash_command(name="download")
 async def download(ctx, link):
     embed = discord.Embed(title="Downloading Video", description=f"```{link}```", color=0x660cf)
     await ctx.respond(embed=embed)
