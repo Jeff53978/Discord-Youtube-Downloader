@@ -14,5 +14,5 @@ $ pip install pytube
 $ pip install discord
 ## Authors
 
-- [@katherinepeterson](https://www.github.com/octokatherine)
+- [@Snikkertjuh](https://www.github.com/Snikkertjuh)
 
